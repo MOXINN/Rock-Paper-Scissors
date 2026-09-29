@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background-color: #f4f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+header h1 {
+    background-color: #23286c;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin-bottom: 3rem;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap; /* Helps on smaller screens */
+}
+
+.choice {
+    height: 10rem;
+    width: 10rem;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background: transparent;
+}
+
+/* Button Hover State */ 
+.btn {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth animation */
+}
+
+.btn:hover {
+    transform: translateY(-5px) scale(1.05); /* Lifts up slightly */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    transform: translateY(2px) scale(0.95);
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    gap: 5rem;
+}
+
+#user-score, #comp-score {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #23286c;
+}
+
+.msg-container {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+#msg {
+    background-color: #23286c;
+    color: #fff;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    transition: background-color 0.3s ease;
+}
